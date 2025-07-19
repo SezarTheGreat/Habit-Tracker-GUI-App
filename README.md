@@ -27,6 +27,12 @@ Here're some of the project's best features:
 git clone https://github.com/SezarTheGreat/Habit-Tracker-GUI-App.git
 ```
 
+<p>3. Download python requests model using pip.</p>
+
+```
+pip install requests
+```
+
 <p>2. Make your own username and Token</p>
 
 ```
