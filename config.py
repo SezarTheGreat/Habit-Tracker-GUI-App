@@ -1,14 +1,15 @@
 """
 Configuration settings for the Habit Tracker application
 """
+import os
 
 class Config:
     # Pixela API Configuration
     PIXELA_BASE_URL = "https://pixe.la/v1/users"
     
-    # Default values
-    DEFAULT_USERNAME = "sexar"
-    DEFAULT_TOKEN = "oewoeidnweondwen"  # You should change this
+    # Default values - Using environment variables or empty defaults
+    DEFAULT_USERNAME = os.getenv("PIXELA_USERNAME", "")
+    DEFAULT_TOKEN = os.getenv("PIXELA_TOKEN", "")
     DEFAULT_GRAPH_ID = "graph1"
     
     # Graph configuration options
